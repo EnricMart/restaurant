@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f5f5f5; /* Cambio de fondo */
 }
 
 .carta-container {
@@ -16,6 +17,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: #ffffff; /* Cambio de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .row {
@@ -31,16 +35,17 @@
     gap: 20px;
     overflow-y: auto;
     max-height: 40vh;
-    border: 1px solid #bbbbbb;
+    border: 1px solid #cccccc; /* Cambio de color de borde */
     padding: 10px;
     border-radius: 10px;
+    background-color: #f9f9f9; /* Cambio de fondo */
 }
 
 .categoria-name {
     font-size: 30px;
     font-weight: 700;
-    color: #a8a8a8;
-    border-bottom: 1px solid #bbbbbb;
+    color: #333333; /* Cambio de color */
+    border-bottom: 1px solid #cccccc; /* Cambio de color de borde */
     margin-bottom: 15px;
     padding-bottom: 5px;
     background: white;
@@ -67,9 +72,10 @@ img {
     top: 5vh;
     height: 90vh;
     width: 70vw;
-    border-left: 1px solid #bbbbbb;
+    border-left: 1px solid #cccccc; /* Cambio de color de borde */
     padding: 40px;
-    background-color: #fff;
+    background-color: #ffffff; /* Cambio de fondo */
     margin-top: 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
