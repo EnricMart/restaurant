@@ -28,57 +28,51 @@ class PlatMin extends HTMLElement {
 
     render() {
         const style = `
-            .divider{
-                flex: 1;
-                border-bottom: 1px solid black;
-            }
-            
-            .platos-min-container {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                height: 50vh;
-            }
-            
-            .plato-min-container{
-                display: flex;
-                align-items: end;
-                width: 100%;
-                gap: 10px;
-            }
-            
-            .plato-precio::after{
-                content: '€';
-            }
-            
-            .plato-nombre {
-                margin-right: -5px;
-            }
-            
-            .plato-cantidad::before{
-                content: 'x';
-            }
-            
-            .btn-action-container *{
-                background-color: black;
-                color: white;
-                padding: 0px 10px;
-                font-size: 10px;
-                cursor: pointer;
-            }
-            
-            .btn-action-container *:hover{
-                background-color: rgb(59, 59, 59);
-            }
         
-        `
+        .platos-min-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 50vh;
+        }
+        
+        .plato-min-container{
+            display: flex;
+            align-items: end;
+            width: 100%;
+            gap: 10px;
+        }
+        
+        .plato-precio::after{
+            content: '€';
+        }
+        
+        .plato-nombre {
+            margin-right: -5px;
+        }
+        
+        .plato-cantidad::before{
+            content: 'x';
+        }
+        
+        .btn-action-container *{
+            background-color: #FF6B6B; /* Rojo claro */
+            color: white;
+            padding: 0px 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        
+        .btn-action-container *:hover{
+            background-color: #991B1B; /* Rojo oscuro */
+        }
+    `
 
         this.shadow.innerHTML = `
         <style>${style}</style>
         <div class="plato-min-container">
             <div class="plato-nombre">${this.nombre}</div>
             <div class="plato-cantidad">${this.cantidad}</div>
-            <div class="divider"></div>
             <div class="plato-precio">${this.precio * this.cantidad}</div>
             <div class="btn-action-container">
                 <div class="add-btn">+</div>

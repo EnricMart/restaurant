@@ -14,72 +14,68 @@ class Comanda extends HTMLElement {
 
     render() {
         const style = `
-            .comanda-title{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 40px;
-                font-weight: 800;
-                color: #5a5a5a;
-            }
-            
-            .total-precio-container{
-                display: flex;
-                align-items: baseline;
-                gap: 9px;
-            }
-            
-            .total-precio-title{
-                font-size: 30px;
-            }
-            
-            .total-precio::after{
-                content: '€';
-            }
-            
-            .comanda-divider{
-                flex: 1;
-                border-bottom: 1px solid black;
-            }
-            
-            .platos-min-container {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                height: 50vh;
-            }
-            
-            .plato-min-container{
-                display: flex;
-                align-items: end;
-                width: 100%;
-                gap: 10px;
-            }
-            
-            .plato-precio::after{
-                content: '€';
-            }
-            
-            .plato-nombre {
-                margin-right: -5px;
-            }
-            
-            .plato-cantidad::before{
-                content: 'x';
-            }
-            
-            .btn-action-container *{
-                background-color: black;
-                color: white;
-                padding: 0px 10px;
-                font-size: 10px;
-                cursor: pointer;
-            }
-            
-            .btn-action-container *:hover{
-                background-color: rgb(59, 59, 59);
-            }
-        `
+        .comanda-title{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 800;
+            color: #FF6B6B;
+        }
+        
+        .total-precio-container{
+            display: flex;
+            align-items: baseline;
+            gap: 9px;
+        }
+        
+        .total-precio-title{
+            font-size: 30px;
+        }
+        
+        .total-precio::after{
+            content: '€';
+        }
+        
+        
+        .platos-min-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 50vh;
+        }
+        
+        .plato-min-container{
+            display: flex;
+            align-items: end;
+            width: 100%;
+            gap: 10px;
+        }
+        
+        .plato-precio::after{
+            content: '€';
+        }
+        
+        .plato-nombre {
+            margin-right: -5px;
+        }
+        
+        .plato-cantidad::before{
+            content: 'x';
+        }
+        
+        .btn-action-container *{
+            background-color: #FF6B6B; /* Rojo claro */
+            color: #FF6B6B;
+            padding: 0px 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        
+        .btn-action-container *:hover{
+            background-color: #991B1B; /* Rojo oscuro */
+        }
+    `
 
         this.shadow.innerHTML = `
             <style>${style}</style>
@@ -89,7 +85,6 @@ class Comanda extends HTMLElement {
             </div>
             <div class="total-precio-container">
                 <div class="total-precio-title">TOTAL</div>
-                <div class="comanda-divider"></div>
                 <div class="total-precio">${this.total.toFixed(2)}</div>
             </div>
         `;

@@ -34,86 +34,88 @@ class Plat extends HTMLElement {
 
     render() {
         const style = 
-            `
-            .plato-container{
-                display: flex;
-                gap: 30px;
-                width: 100%;
-                height: 150px;
-                overflow: hidden;
-            }
-            
-            .plato-img-container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 30%;
-                height: 100%;
-            }
-            
-            .plato-img{
-                object-fit: cover;
-                height: 100%;
-                width: 100%
-            }
-            
-            .plato-info-frame{
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
-                width: 100%;
-            }
-            
-            .plato-info-container{
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .plato-nombre{
-                font-size: 40px;
-                font-weight: 700;
-            }
-            
-            .plato-alergenos-container{
-                display: flex;
-                gap: 3px;
-            }
-            
-            .plato-alergeno{
-                font-weight: 500;
-            }
-            
-            
-            .precio-container{
-                display: flex;
-                flex-direction: column;
-                align-items: end;
-            }
-            
-            .plato-precio{
-                font-size: 30px;
-            }
-            
-            .plato-add{
-                background-color: black;
-                color: white;
-                border: none;
-                outline: none;
-                padding: 5px 20px;
-                cursor: pointer;
-            }
-            
-            .plato-alergeno:not(:last-child)::after {
-                content: ',';
-            }
-            .plato-alergenos-container::before{
-                content: 'Alergenos: ';
-            }
-            
-            .plato-precio::after{
-                content: '€';
-            }
         `
+        .plato-container{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        .plato-img-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 100%;
+        }
+        
+        .plato-img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%
+        }
+        
+        .plato-info-frame{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            width: 100%;
+        }
+        
+        .plato-info-container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .plato-nombre{
+            font-size: 40px;
+            font-weight: 700;
+            color: #FF6B6B; /* Rojo claro */
+        }
+        
+        .plato-alergenos-container{
+            display: flex;
+            gap: 3px;
+        }
+        
+        .plato-alergeno{
+            font-weight: 500;
+        }
+        
+        
+        .precio-container{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        
+        .plato-precio{
+            font-size: 30px;
+            color: #FF6B6B; /* Rojo claro */
+        }
+        
+        .plato-add{
+            background-color: #991B1B; /* Rojo oscuro */
+            color: white;
+            border: none;
+            outline: none;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+        
+        .plato-alergeno:not(:last-child)::after {
+            content: ',';
+        }
+        .plato-alergenos-container::before{
+            content: 'Alergenos: ';
+        }
+        
+        .plato-precio::after{
+            content: '€';
+        }
+    `
 
         this.shadow.innerHTML = `
             <style>${style}</style>
