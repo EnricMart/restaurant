@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - WebComponents | Javier Díaz Neira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/components/Plat.js"></script>
+    <script src="./js/components/PlatMin.js"></script>
+    <script src="./js/components/Comanda.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="page-body">
+        <div class="carta-container">
+            <div class="row">
+                <div class="categoria-container primeros">
+                    <div class="categoria-name">Primeros</div>
+                    <div class="platos-container"></div>
+                </div>
+                <div class="categoria-container segundos">
+                    <div class="categoria-name">Segundos</div>
+                    <div class="platos-container"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="categoria-container postres">
+                    <div class="categoria-name">Postres</div>
+                    <div class="platos-container"></div>
+                </div>
+                <div class="categoria-container bebidas">
+                    <div class="categoria-name">Bebidas</div>
+                    <div class="platos-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="comanda-container">
+            <comanda-rest total="0"></comanda-rest>
+        </div>
+    </div>
+</body>
+
+</html>
