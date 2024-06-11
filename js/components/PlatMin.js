@@ -61,6 +61,8 @@ class PlatMin extends HTMLElement {
             padding: 0px 10px;
             font-size: 10px;
             cursor: pointer;
+            border-radius: 10px;
+             
         }
         
         .btn-action-container *:hover{

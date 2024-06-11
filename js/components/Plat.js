@@ -103,6 +103,7 @@ class Plat extends HTMLElement {
             outline: none;
             padding: 5px 20px;
             cursor: pointer;
+             border-radius: 10px;
         }
         
         .plato-alergeno:not(:last-child)::after {
